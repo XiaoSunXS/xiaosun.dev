@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Lato } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Xiao's website",
   description: "The personal website of Xiao",
 };
+
+// Initialize the font with the weights you need
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-lato",
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -24,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${lato.variable} font-sans antialiased`}>
         <div className="flex-1 container mx-auto px-20 py-20">{children}</div>
       </body>
     </html>
