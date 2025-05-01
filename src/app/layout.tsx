@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Lato } from "next/font/google";
+import { Header } from "./components/Header";
 
 export const metadata: Metadata = {
   title: "Xiao's website",
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} font-sans antialiased`}>
+        <Header />
         <div className="flex-1 container mx-auto px-20 py-20">{children}</div>
       </body>
     </html>
