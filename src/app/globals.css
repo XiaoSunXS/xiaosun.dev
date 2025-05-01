@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color palette */
+  --dark-brown: #21130d;
+  --primary-brown: #7d5a50;
+  --secondary-brown: #b4846c;
+  --tertiary-pink: #e5b299;
+  --light-peach: #f7f1eb;
+
+  /* Same colors in RGB format for opacity control */
+  --dark-brown-rgb: 33, 19, 13;
+  --primary-brown-rgb: 125, 90, 80;
+  --secondary-brown-rgb: 180, 132, 108;
+  --tertiary-pink-rgb: 229, 178, 153;
+  --light-peach-rgb: 247, 241, 235;
+
+  /* Default theme (light mode) */
+  --background: var(--light-peach);
+  --foreground: var(--dark-brown);
+  --accent: var(--secondary-brown);
+  --muted: var(--tertiary-pink);
+  --border: var(--primary-brown);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Dark mode preferences */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist Sans", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+/* If you have special Geist font imports, add them like this */
+@font-face {
+  font-family: "Geist Sans";
+  src: url("/fonts/GeistSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
