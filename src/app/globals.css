@@ -23,8 +23,6 @@
   --border: var(--primary-brown);
 }
 
-/* Dark mode preferences */
-
 /* Base styles */
 body {
   background: var(--background);
@@ -34,6 +32,10 @@ body {
 
 h2 {
   font-size: 60px;
+}
+
+hr {
+  color: var(--secondary-brown);
 }
 
 /* If you have special Geist font imports, add them like this */
