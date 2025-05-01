@@ -8,7 +8,7 @@ const SOCIAL_MEDIA = new Map<SocialMediaKey, string>([
 ]);
 
 export const SocialMedia = () => (
-  <>
+  <div>
     <ul>
       {[...SOCIAL_MEDIA.keys()].map((key) => (
         <li key={key}>
@@ -24,5 +24,5 @@ export const SocialMedia = () => (
         </li>
       ))}
     </ul>
-  </>
+  </div>
 );
