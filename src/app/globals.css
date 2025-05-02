@@ -34,12 +34,12 @@ h2 {
   font-size: 60px;
 }
 
-h4 {
-  font-size: 20px;
+h3 {
+  font-size: 30;
 }
 
-hr {
-  color: var(--secondary-brown);
+h4 {
+  font-size: 20px;
 }
 
 /* If you have special Geist font imports, add them like this */

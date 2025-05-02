@@ -15,3 +15,10 @@ export type JobExperience = {
   };
   tasks: React.ReactNode[];
 };
+
+export type Sections = {
+  about: string;
+  experience: string;
+};
+
+export type Sectionkey = keyof Sections;

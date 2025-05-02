@@ -3,6 +3,7 @@ import { formatYearMonth } from "../utils/helpers";
 
 export const JobExperiences = () => (
   <div className="space-y-4">
+    <h3>Work Experience</h3>
     {JOB_EXPERIENCES.map((jobExperienceItem) => (
       <div key={`job-at-${jobExperienceItem.company}`}>
         <h4>{jobExperienceItem.company}</h4>
