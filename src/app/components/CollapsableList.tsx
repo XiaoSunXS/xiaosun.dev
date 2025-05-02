@@ -31,7 +31,7 @@ export const CollapsableList = ({
           ))}
         </ul>
         <a
-          className="underline cursor-pointer flex"
+          className="cursor-pointer flex"
           onClick={() => setIsCollapsed(false)}
         >
           <LuChevronRight className="mt-1 ml-0" />
@@ -49,10 +49,7 @@ export const CollapsableList = ({
             <li key={`collapsable-item-${index}`}>{item}</li>
           ))}
         </ul>
-        <a
-          className="underline cursor-pointer flex"
-          onClick={() => setIsCollapsed(true)}
-        >
+        <a className="cursor-pointer flex" onClick={() => setIsCollapsed(true)}>
           <LuChevronUp className="m-1" />
           Hide
         </a>

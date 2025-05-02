@@ -4,6 +4,7 @@ export const JOB_EXPERIENCES: JobExperience[] = [
   {
     title: "Software Engineer",
     company: "CodeExpert (ETH Zurich)",
+    companyUrl: "https://expert.ethz.ch",
     dates: {
       start: { year: 2024, month: 9 },
     },
@@ -17,7 +18,7 @@ export const JOB_EXPERIENCES: JobExperience[] = [
   {
     title: "Software Engineer",
     company: "Ledgy",
-    companyUrl: "https://www.ledgy.com",
+    companyUrl: "https://app.ledgy.com",
     dates: {
       start: { year: 2020, month: 11 },
       end: { year: 2024, month: 8 },
