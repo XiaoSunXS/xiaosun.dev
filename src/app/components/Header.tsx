@@ -11,7 +11,7 @@ export const Header = () => (
     className="fixed top-0 left-0 w-full"
     style={{ backgroundColor: "var(--light-peach)" }}
   >
-    <div className="flex space-x-4 p-4 pl-40">
+    <div className="flex flex-col items-end space-x-0 py-4 px-8 md:space-x-8 md:flex-row md:pl-16 lg:pl-40">
       {[...SECTIONS.keys()].map((key, index) => (
         <a
           href={`#${key}`}
