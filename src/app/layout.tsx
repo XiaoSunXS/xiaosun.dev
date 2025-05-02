@@ -28,7 +28,9 @@ export default function RootLayout({
         className={`${lato.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        <div className="flex-1 container mx-auto px-20 py-20">{children}</div>
+        <div className="flex-1 container mx-auto lg:px-20 lg:py-20 p-8">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
