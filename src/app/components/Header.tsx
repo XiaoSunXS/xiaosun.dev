@@ -3,6 +3,7 @@ import { Sectionkey } from "../utils/types";
 const SECTIONS = new Map<Sectionkey, string>([
   ["about", "About"],
   ["experience", "Experience"],
+  ["projects", "Projects"],
 ]);
 
 export const Header = () => (

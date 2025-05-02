@@ -1,5 +1,6 @@
 import { IntroAboutMe } from "./components/IntroAboutMe";
 import { JobExperiences } from "./components/JobExperiences";
+import { Projects } from "./components/Projects";
 import { SocialMedia } from "./components/SocialMedia";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
       </section>
       <section id="experience" className="pt-20">
         <JobExperiences />
+      </section>
+      <section id="projects" className="pt-20">
+        <Projects />
       </section>
     </div>
   );

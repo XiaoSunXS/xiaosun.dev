@@ -19,6 +19,13 @@ export type JobExperience = {
 export type Sections = {
   about: string;
   experience: string;
+  projects: string;
 };
 
 export type Sectionkey = keyof Sections;
+
+export type Project = {
+  title: string;
+  description: string;
+  url: string;
+};
